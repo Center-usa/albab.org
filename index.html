@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الباب مفتوح | ALBAB</title>
+
+  <!-- Font Awesome للأيقونات الرسمية -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    * { box-sizing: border-box; font-family: "Tahoma", Arial, sans-serif; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6ec6ff, #1976d2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px 16px 40px;
+      text-align: center;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 auto 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+    h1 {
+      font-size: 25px;
+      margin: 8px 0 4px;
+    }
+    p.subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 24px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      text-align: center; /* محاذاة كل الزر للنص والأيقونة في الوسط */
+    }
+
+    .link-btn {
+      background: #fff;
+      color: #0d47a1;
+      text-decoration: none;
+      padding: 14px 16px;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column; /* الأيقونة فوق النص */
+      align-items: center;   /* محاذاة أفقية للنص والأيقونة في الوسط */
+      justify-content: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      min-height: 70px; /* ارتفاع موحد لكل زر */
+      gap: 6px; /* مسافة بين الأيقونة والنص */
+    }
+
+    .link-btn i {
+      font-size: 24px; /* حجم الأيقونة */
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 12px;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- اللوجو -->
+    <div class="logo">
+      <img src="logo.png" alt="ALBAB Logo" />
+    </div>
+
+    <h1>الباب مفتوح</h1>
+    <p class="subtitle">نُرحبْ بتواصلك عبر المنصات التالية<br/>يُسعدنا  اهتمامك</p>
+
+    <!-- الروابط -->
+    <div class="links">
+      <a class="link-btn" href="https://www.facebook.com/albabmaftouh.org" target="_blank">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        <span>Albab – فيسبوك</span>
+      </a>
+      <a class="link-btn" href="https://www.instagram.com/albabmaftouh/" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        <span>@albabmaftouh</span>
+      </a>
+      <a class="link-btn" href="https://www.tiktok.com/@albabmaftouh" target="_blank">
+        <i class="fab fa-tiktok" aria-hidden="true"></i>
+        <span>تابعنا على تيك توك</span>
+      </a>
+      <a class="link-btn" href="https://www.youtube.com/@AlbabMaftouh?sub_confirmation=1" target="_blank">
+        <i class="fab fa-youtube" aria-hidden="true"></i>
+        <span>تابعنا على يوتيوب</span>
+      </a>
+      <a class="link-btn" href="https://t.me/albabmaftouh" target="_blank">
+        <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+        <span>تابعنا على تيليجرام</span>
+      </a>
+      <a class="link-btn" href="https://wa.me/+34635021163" target="_blank">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span>تواصل معنا واتساب</span>
+      </a>
+      <a class="link-btn" href="https://albab.org" target="_blank">
+        <i class="fas fa-globe" aria-hidden="true"></i>
+        <span>الموقع الرسمي albab.org</span>
+      </a>
+      <a class="link-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfAP6J26YG6SqOvR1lHIqdAqww7tdPocWr5l60K1fI5FrQn0A/viewform?usp=header" target="_blank">
+        <i class="fas fa-pen" aria-hidden="true"></i>
+        <span>تسجيل البيانات</span>
+      </a>
+    </div>
+
+    <footer>
+      © 2026 ALBAB – جميع الحقوق محفوظة
+    </footer>
+  </div>
+</body>
+</html>
