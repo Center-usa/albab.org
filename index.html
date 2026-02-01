@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>الباب مفتوح | ALBAB</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQBLJEPVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-SLQBLJEPVK');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLQBLJEPVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SLQBLJEPVK');
+  </script>
 
   <!-- Font Awesome للأيقونات الرسمية -->
   <link
@@ -65,7 +65,7 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
-      text-align: center; /* محاذاة كل الزر للنص والأيقونة في الوسط */
+      text-align: center;
     }
 
     .link-btn {
@@ -77,16 +77,16 @@
       font-size: 15px;
       font-weight: bold;
       display: flex;
-      flex-direction: column; /* الأيقونة فوق النص */
-      align-items: center;   /* محاذاة أفقية للنص والأيقونة في الوسط */
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
-      min-height: 70px; /* ارتفاع موحد لكل زر */
-      gap: 6px; /* مسافة بين الأيقونة والنص */
+      min-height: 70px;
+      gap: 6px;
     }
 
     .link-btn i {
-      font-size: 24px; /* حجم الأيقونة */
+      font-size: 24px;
     }
 
     .link-btn:hover {
@@ -111,38 +111,53 @@
     <h1>الباب مفتوح</h1>
     <p class="subtitle">نُرحبْ بتواصلك عبر المنصات التالية<br/>يُسعدنا  اهتمامك</p>
 
-    <!-- الروابط -->
+    <!-- الروابط مع تتبع الأزرار -->
     <div class="links">
-      <a class="link-btn" href="https://www.facebook.com/albabmaftouh.org" target="_blank">
-        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+      <a class="link-btn" href="https://www.facebook.com/albabmaftouh.org" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'Facebook' });">
+        <i class="fab fa-facebook-f"></i>
         <span>Facebook</span>
       </a>
-      <a class="link-btn" href="https://www.instagram.com/albabmaftouh/" target="_blank">
-        <i class="fab fa-instagram" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://www.instagram.com/albabmaftouh/" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'Instagram' });">
+        <i class="fab fa-instagram"></i>
         <span>Instagram</span>
       </a>
-      <a class="link-btn" href="https://www.tiktok.com/@albabmaftouh" target="_blank">
-        <i class="fab fa-tiktok" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://www.tiktok.com/@albabmaftouh" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'TikTok' });">
+        <i class="fab fa-tiktok"></i>
         <span>Tiktok</span>
       </a>
-      <a class="link-btn" href="https://www.youtube.com/@AlbabMaftouh?sub_confirmation=1" target="_blank">
-        <i class="fab fa-youtube" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://www.youtube.com/@AlbabMaftouh?sub_confirmation=1" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'YouTube' });">
+        <i class="fab fa-youtube"></i>
         <span>Youtube</span>
       </a>
-      <a class="link-btn" href="https://t.me/albabmaftouh" target="_blank">
-        <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://t.me/albabmaftouh" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'Telegram' });">
+        <i class="fab fa-telegram-plane"></i>
         <span>Telegram</span>
       </a>
-      <a class="link-btn" href="https://wa.me/+34647743463" target="_blank">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://wa.me/+34647743463" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'Whatsapp' });">
+        <i class="fab fa-whatsapp"></i>
         <span>Whatsapp</span>
       </a>
-      <a class="link-btn" href="https://albab.org" target="_blank">
-        <i class="fas fa-globe" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://albab.org" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'Albab.org' });">
+        <i class="fas fa-globe"></i>
         <span>albab.org</span>
       </a>
-      <a class="link-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfAP6J26YG6SqOvR1lHIqdAqww7tdPocWr5l60K1fI5FrQn0A/viewform?usp=header" target="_blank">
-        <i class="fas fa-pen" aria-hidden="true"></i>
+
+      <a class="link-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfAP6J26YG6SqOvR1lHIqdAqww7tdPocWr5l60K1fI5FrQn0A/viewform?usp=header" target="_blank"
+         onclick="gtag('event','click',{ 'event_category':'button','event_label':'Register' });">
+        <i class="fas fa-pen"></i>
         <span>تسجيل Register</span>
       </a>
     </div>
@@ -153,12 +168,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
